@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Bomberman';
+    src: url('bm.ttf');
+}
+body {
+    background: url(images/back2.jpg);
+    background-position-y: 35%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header {
+    font-size: 22px;
+    margin-top: 50px;
+    width: 710px;
+    left: 600px;
+    position: relative;
+    color: rgb(185, 185, 185);
+    text-shadow: rgb(0, 255, 242) 0px 0px 90px;
+    font-family: Bomberman;
+}
+#settings {
+    will-change: left;
+    transform: translateZ(0);
+    margin-left: 40px;
+    color: rgb(185, 185, 185);
+}
+.container {
+    position: relative;
+    display: flex;
+}
+#tutorial {
+    width: 500px;
+    height: 636px;
+    margin-top: 50px;
+    margin-left: 40px;
+    white-space: normal;
+    overflow: overlay;
+    line-break: auto;
+}
+h2 {
+    color: rgb(185, 185, 185);
+    font-size: 25px;
+}
+#tutorialtext {
+    color: rgb(185, 185, 185);
+    font-size: 18px;
+}
+#menu {
+    width: 720px;
+    height: 624px;
+    position: absolute;
+    left: 600px;
+    top: 64px;
+    margin: auto;
+    z-index: 500;
+    background-color: rgb(121, 121, 121);
+    display: block;
+    box-shadow: #387e7a 0px 5px 15px;
+}
+#scoreboard {
+    will-change: left;
+    transform: translateZ(0);
+    width: 720px;
+    height: 64px;
+    left: 600px;
+    position: absolute;
+    z-index: 600;
+    display: none;
+}
+#gamestyle {
+    width: 720px;
+    height: 624px;
+    position: absolute;
+    top: 64px;
+    left: 600px;
+    margin: auto;   
+    box-shadow: #387e7a 0px 5px 15px;
+}
+#game {
+    width: 720px;
+    height: 624px;
+    position: absolute;
+    margin: auto;   
+    will-change: left;
+    transform: translateZ(0);
+}
+#menulist {
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;  
+    height: 320px;
+    width: 320px;
+    position: relative;
+    text-align: center;
+}
+.highlight { 
+    background-color:#00fff2; 
+    width: 100px;
+    margin: auto;
+}
+ul {
+    list-style-type: none;
+    display: inline;
+    font-family: 'Bomberman';
+    font-size: 20px;
+}
+li {
+    margin-left: 0;
+    padding: 20px;
+}
+#score {
+    padding-top: 20px;
+    margin-left: 5%;
+    float: left;
+    font-family: 'Bomberman';
+    font-size: 20px;
+}
+#time {
+    padding-top: 20px;
+    margin-left: 10%;
+    float: left;
+    font-family: 'Bomberman';
+    font-size: 20px;
+}
+#lives {
+    padding-top: 20px;
+    float: left;
+    margin-left: 10%;
+    font-family: 'Bomberman';
+    font-size: 20px;
+}
+#level {
+    padding-top: 20px;
+    float: left;
+    margin-left: 10%;
+    font-family: 'Bomberman';
+    font-size: 20px;
+}
+#stage {
+    position: absolute;
+    background-color: rgb(0, 255, 255, 0.8);
+    display: none;
+    z-index: 700;
+    height: 120px;
+    width: 320px;
+    top: 250px;
+    left: 205px;
+}
+#board {
+    width: 960px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#title {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 150px;
+    display: block;
+    text-align: center;
+    font-family: 'Bomberman';
+    text-shadow: 2px 2px 10px rgb(0, 255, 255, 0.5);
+}
+#header2 {
+    font-size: 50px;
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+    font-family: 'Bomberman';
+}
+@keyframes hide{
+    0% { transform: translate(0px);}
+    20% { transform: translate(5px);}
+    100% { transform: translate(120vw);}
+}
+.hide {
+    animation: hide 2.0s forwards ease-in-out;
+    animation-delay: 2.0s;
+}
+#levelcontainer {
+    position: absolute;
+    overflow: hidden;
+    width: 720px;
+    height: 624px;
+    top: 64px;
+    left: 600px;
+}
+#chars {
+    width: 720px;
+    height: 624px;
+    position: absolute;
+    margin: auto;   
+    will-change: left;
+    transform: translateZ(0);
+}

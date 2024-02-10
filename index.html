@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="./static/styles.css" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <h1>BUDGET SUPER BOMBERMAN</h1>
+    </div>
+    <div id="settings">
+        <div id="fps">
+           60.0 FPS
+        </div>
+        <div id="music">
+            MUSIC: OFF
+        </div>
+        <div id="effects">
+            SOUND EFFECTS: ON
+        </div>
+        <div id="cheats">
+            CHEATS: OFF
+        </div>
+    </div>
+    <div class="container">
+        <div id="tutorial">
+            <div id="tutorialtext">
+                <h2>CONTROLS</h2>
+                IN MENU: <br>
+                Navigate through menu using ARROW KEYS. <br>
+                Press ENTER to select. <br><br>
+                IN GAME: <br>
+                Use ARROW KEYS to move the character. <br>
+                Press SPACE to plant the bomb. <br>
+                Press M to mute/unmute music. <br>
+                Press N to mute/unmute sound effects. <br>
+                Press X to toggle cheatmode. <br>
+                Press P to pause. <br><br>
+                <h2>GAME DESCRIPTION</h2>
+                Welcome to our bomberman game, made by Thomas and Gerol! Game objective is simple: defeat the bots and find escape portal in under 3 minutes and you win!
+                But wait, theres a secret bonus objective: find the apple hidden in one of the brickwalls for extra points!
+                <br><br>
+                Scoring:
+                Defeating each bot awards 100 points and finding the missing apple gives 200 points.
+                <br><br>
+                Good luck and have fun!
+            </div>
+        </div>
+        <div id="scoreboard">
+            <div id="score"></div>
+            <div id="lives"></div>
+            <div id="level"></div>
+            <div id="time"></div>
+        </div>
+        <div id="menu">
+            <div id="title">MAIN MENU</div>
+            <div id="menulist">
+                <ul class="list">
+                    <li value="1">START</li> 
+                    <li value="2">RESTART</li> 
+                    <li value="3">EXIT</li> 
+                </ul>
+            </div>
+        </div>
+        <div id="gamestyle">
+            <div id="game">
+                <div id="chars">
+
+                </div>
+            </div>
+        </div>
+        <div class="container" id="levelcontainer">
+            <div id="stage">
+                <div id="header2">
+                    LEVEL 1
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
